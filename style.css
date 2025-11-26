@@ -1,0 +1,148 @@
+    /* Color Theme Swatches in Hex 
+.Grain-dark-green-abstract-background-design-texture-1-hex { color: #042326; }
+.Grain-dark-green-abstract-background-design-texture-2-hex { color: #0A3A40; }
+.Grain-dark-green-abstract-background-design-texture-3-hex { color: #0F5959; }
+.Grain-dark-green-abstract-background-design-texture-4-hex { color: #1D7373; }
+.Grain-dark-green-abstract-background-design-texture-5-hex { color: #107361; }
+
+Color Theme Swatches in RGBA 
+.Grain-dark-green-abstract-background-design-texture-1-rgba { color: rgba(4, 34, 38, 1); }
+.Grain-dark-green-abstract-background-design-texture-2-rgba { color: rgba(10, 58, 63, 1); }
+.Grain-dark-green-abstract-background-design-texture-3-rgba { color: rgba(15, 89, 89, 1); }
+.Grain-dark-green-abstract-background-design-texture-4-rgba { color: rgba(28, 114, 114, 1); }
+.Grain-dark-green-abstract-background-design-texture-5-rgba { color: rgba(16, 114, 96, 1); }
+
+ Color Theme Swatches in HSLA 
+.Grain-dark-green-abstract-background-design-texture-1-hsla { color: hsla(185, 80, 8, 1); }
+.Grain-dark-green-abstract-background-design-texture-2-hsla { color: hsla(185, 72, 14, 1); }
+.Grain-dark-green-abstract-background-design-texture-3-hsla { color: hsla(180, 70, 20, 1); }
+.Grain-dark-green-abstract-background-design-texture-4-hsla { color: hsla(180, 60, 28, 1); }
+.Grain-dark-green-abstract-background-design-texture-5-hsla { color: hsla(168, 75, 25, 1); }
+*/
+
+
+
+
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0A3A40;
+    background-image: linear-gradient(to left,#0A3A40,#1D7373);
+}
+
+.principal {
+    display:flex;
+    justify-content: right;
+}
+
+.imageprincipal {
+    border-radius: 15px;
+}
+
+.titreprincipal {
+    color:aliceblue;
+    font-size: 33px;
+    animation: slideIn 3s ease-out;
+    margin-top: 25px;
+}
+
+.espacepresentation {
+    display: flex;
+    justify-content: left;
+    margin-left: 500px;
+    border: 5px solid #107361;
+    border-radius: 6px ;
+    width: 400;
+    height: 800px;
+}
+
+.presentation {
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    margin: 20px 0px 20px 200px;
+    text-align: center;
+}
+
+.espaceinformation {
+    display: flex;
+    border: 5px solid #107361;
+    border-radius: 6px;
+    height: 200px;
+    width: 600px;
+    margin-top: 15px;
+}
+
+.information {
+    font-size: 35px;
+    color: white;
+}
+
+
+#btncompetences {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #0F5959;
+    border-radius: 360px;
+    margin-left: 800px;
+    background-color: #107361;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#competences {
+    display: grid;
+    justify-content: column;
+    width: 600px;
+    height: 300px;
+}
+
+.devimage {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+#btnprojets {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #0F5959;
+    border-radius: 360px;
+    margin-left: 300px;
+    background-color: #107361;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#btncontact {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #0F5959;
+    border-radius: 360px;
+    margin-left: 200px;
+    background-color: #107361;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#test {
+    border: 10px solid black;
+    opacity: 0;
+    transition: opacity 3s ease;
+}
+
+#test.visible {
+    opacity: 1;
+}
+
+
+@keyframes slideIn {
+    0%{transform: translateX(-100%);}
+    100%{transform: translateX(0%);}
+}
