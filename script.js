@@ -1,6 +1,7 @@
+const btncompetences = document.getElementById('btncompetences');
 const competences = document.getElementById('competences');
-const test = document.getElementById('test');
 
-competences.addEventListener('click', () => {
-    test.classList.add('visible');
+btncompetences.addEventListener('click', () => {
+    competences.classList.add('visible');
 });
+

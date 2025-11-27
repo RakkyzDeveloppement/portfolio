@@ -40,7 +40,8 @@ body {
 }
 
 .titreprincipal {
-    color:aliceblue;
+    color:cadetblue;
+    border-color: black;
     font-size: 33px;
     animation: slideIn 3s ease-out;
     margin-top: 25px;
@@ -80,8 +81,8 @@ body {
 
 
 #btncompetences {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border: 2px solid #0F5959;
     border-radius: 360px;
     margin-left: 800px;
@@ -95,8 +96,18 @@ body {
 #competences {
     display: grid;
     justify-content: column;
-    width: 600px;
+    width: 300px;
     height: 300px;
+    border: 5px solid #0F5959;
+    border-radius: 10px;
+    padding-left: 50px;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 3s ease;
+}
+
+#competences.visible {
+    opacity: 1;
 }
 
 .devimage {
@@ -106,8 +117,8 @@ body {
 }
 
 #btnprojets {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border: 2px solid #0F5959;
     border-radius: 360px;
     margin-left: 300px;
@@ -119,8 +130,8 @@ body {
 }
 
 #btncontact {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border: 2px solid #0F5959;
     border-radius: 360px;
     margin-left: 200px;
@@ -131,18 +142,56 @@ body {
     cursor: pointer;
 }
 
-#test {
-    border: 10px solid black;
-    opacity: 0;
-    transition: opacity 3s ease;
-}
-
-#test.visible {
-    opacity: 1;
-}
-
 
 @keyframes slideIn {
     0%{transform: translateX(-100%);}
     100%{transform: translateX(0%);}
 }
+
+@media screen and (max-width: 1366px) {
+    .presentation {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin: 20px 0px 20px 100px;
+    text-align: center;
+}
+   .espacepresentation {
+    display: flex;
+    justify-content: left;
+    margin-left: 100px;
+    border: 5px solid #107361;
+    border-radius: 6px ;
+    width: 150;
+    height: 250px;
+}
+    .espaceinformation {
+    display: flex;
+    border: 5px solid #107361;
+    border-radius: 6px;
+    height: 100px;
+    width: 300px;
+    margin-top: 15px;
+}
+
+    .information {
+    font-size: 20px;
+    color: white;
+}
+
+    #btncompetences {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #0F5959;
+    border-radius: 360px;
+    margin-left: 400px;
+    background-color: #107361;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+}
+    
+}
+
+
