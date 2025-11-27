@@ -26,8 +26,41 @@ Color Theme Swatches in RGBA
 
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0A3A40;
-    background-image: linear-gradient(to left,#0A3A40,#1D7373);
+    background-image: url(../portfolio/image/futuristik.jpg);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #ccc;
+    letter-spacing: 0.25rem;
+    margin-right: 1rem;
+}
+
+.imagenav1, .imagenav2, .imagenav3 {
+    border-radius: 360px;
+    animation: slideIn 2s ease-out;
+}
+
+#btncompetences, #btnprojets, #btncontact {
+    background: transparent;
+    color: #0d0d0d;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.25rem;
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid #0d0d0d;
+    font-size: 1.2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    animation: slideIn 5s ease-out;
+}
+
+#btncompetences:hover, #btnprojets:hover, #btncontact:hover {
+    color: #ccc;
+    background: #0d0d0d;
 }
 
 .principal {
@@ -36,72 +69,52 @@ body {
 }
 
 .imageprincipal {
-    border-radius: 15px;
+    border-radius: 360px;
+    margin-right: 50px;
 }
 
 .titreprincipal {
-    color:cadetblue;
-    border-color: black;
-    font-size: 33px;
+    font-size: 50px;
     animation: slideIn 3s ease-out;
     margin-top: 25px;
+    margin-right: 20px;
+}
+
+#fondtexteh1 {
+    background: center / cover url(../portfolio/image/futuristik.jpg);
+    background-clip: texte;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .espacepresentation {
     display: flex;
     justify-content: left;
-    margin-left: 500px;
-    border: 5px solid #107361;
-    border-radius: 6px ;
-    width: 400;
-    height: 800px;
+    background-color: transparent;
+    margin-left: 100px;
+    border: 5px solid #0d0d0d;
+    border-radius: 20px ;
+    width: 700px;
+    height: 300px;
 }
 
 .presentation {
-    font-size: 35px;
-    color: white;
+    font-size: 20px;
+    color: cadetblue;
     font-weight: bold;
-    margin: 20px 0px 20px 200px;
+    margin: 20px 0px 20px 0px;
     text-align: center;
-}
-
-.espaceinformation {
-    display: flex;
-    border: 5px solid #107361;
-    border-radius: 6px;
-    height: 200px;
-    width: 600px;
-    margin-top: 15px;
-}
-
-.information {
-    font-size: 35px;
-    color: white;
-}
-
-
-#btncompetences {
-    width: 50px;
-    height: 50px;
-    border: 2px solid #0F5959;
-    border-radius: 360px;
-    margin-left: 800px;
-    background-color: #107361;
-    color: white;
-    font-weight: bold;
-    font-size: 30px;
-    cursor: pointer;
 }
 
 #competences {
     display: grid;
     justify-content: column;
-    width: 300px;
+    width: 700px;
     height: 300px;
-    border: 5px solid #0F5959;
+    border: 5px solid #0d0d0d;
     border-radius: 10px;
     padding-left: 50px;
-    background-color: white;
+    background-color: transparent;
     opacity: 0;
     transition: opacity 3s ease;
 }
@@ -115,33 +128,6 @@ body {
     height: 30px;
     border-radius: 20px;
 }
-
-#btnprojets {
-    width: 50px;
-    height: 50px;
-    border: 2px solid #0F5959;
-    border-radius: 360px;
-    margin-left: 300px;
-    background-color: #107361;
-    color: white;
-    font-weight: bold;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-#btncontact {
-    width: 50px;
-    height: 50px;
-    border: 2px solid #0F5959;
-    border-radius: 360px;
-    margin-left: 200px;
-    background-color: #107361;
-    color: white;
-    font-weight: bold;
-    font-size: 30px;
-    cursor: pointer;
-}
-
 
 @keyframes slideIn {
     0%{transform: translateX(-100%);}
@@ -165,33 +151,7 @@ body {
     width: 150;
     height: 250px;
 }
-    .espaceinformation {
-    display: flex;
-    border: 5px solid #107361;
-    border-radius: 6px;
-    height: 100px;
-    width: 300px;
-    margin-top: 15px;
-}
 
-    .information {
-    font-size: 20px;
-    color: white;
-}
-
-    #btncompetences {
-    width: 50px;
-    height: 50px;
-    border: 2px solid #0F5959;
-    border-radius: 360px;
-    margin-left: 400px;
-    background-color: #107361;
-    color: white;
-    font-weight: bold;
-    font-size: 30px;
-    cursor: pointer;
-}
-    
 }
 
 
