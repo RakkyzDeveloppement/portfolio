@@ -5,8 +5,12 @@ const btnprojets = document.getElementById('btnprojets');
 const btncontact = document.getElementById('btncontact');
 const btncompetences = document.getElementById('btncompetences');
 const competences = document.getElementById('competences');
-
+const carousel = document.getElementById('carouselprojets');
 
 btncompetences.addEventListener('click', () => {
     competences.classList.toggle('visible');
 });
+
+btnprojets.addEventListener('click', () => {
+    carouselprojets.classList.toggle('visible');
+})
