@@ -96,6 +96,8 @@ nav {
     border-radius: 20px ;
     width: 700px;
     height: 300px;
+    background-color: rgba(0,0,0,0.5);
+    
 }
 
 .presentation {
@@ -104,6 +106,10 @@ nav {
     font-weight: bold;
     margin: 20px 0px 20px 0px;
     text-align: center;
+}
+
+.presentation p {
+    opacity: 100% !important;
 }
 
 #competences {
@@ -134,13 +140,21 @@ nav {
     align-items: center;
     justify-content: center;
     opacity: 0;
-
 }
 
 #carouselprojets.visible {
     opacity: 1;
     transition: opacity 3s ease-out;
 }
+
+.carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+}
+
 
 @keyframes slideIn {
     0%{transform: translateX(-100%);}
